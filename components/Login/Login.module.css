@@ -1,0 +1,22 @@
+.container {
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form{
+    width: 100%;
+}
+.title {
+    margin-bottom: 50px;
+}
+
+
+.button {
+    width: 100%;
+}
