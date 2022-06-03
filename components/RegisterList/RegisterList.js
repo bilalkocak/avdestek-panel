@@ -139,8 +139,11 @@ const RegisterList = props => {
                     >
                         <List.Item.Meta
                             avatar={<Avatar size={64} icon={<UserOutlined/>}/>}
-                            title={<a
-                                href="https://ant.design">{item.fullName} / {dayjs(item.createdAt).locale('tr').fromNow()}</a>}
+                            title={
+                                <a
+                                    href={'https://www.barobirlik.org.tr/AvukatArama'}
+                                    target={'_blank'}
+                                    rel="noreferrer">{item.fullName} / {dayjs(item.createdAt).locale('tr').fromNow()}</a>}
                             description={<div>
                                 <div>Baro: {item.city.label}</div>
                                 <div>Baro No: {item.baroNumber}</div>

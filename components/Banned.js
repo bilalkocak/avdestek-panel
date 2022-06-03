@@ -36,7 +36,7 @@ const Banned = props => {
     return (
         <div>
             <div>
-                <Title level={2}>Destek onayı bekleyenler</Title>
+                <Title level={2}>Engelli hesaplar</Title>
             </div>
             <List
                 itemLayout="horizontal"

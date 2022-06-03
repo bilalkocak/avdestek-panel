@@ -4,7 +4,7 @@ import AppLayout from "../components/Layout";
 
 const PanelPage = props => {
     return (
-        <AppLayout>
+        <AppLayout activePage={['1']}>
             <Panel/>
         </AppLayout>
     );

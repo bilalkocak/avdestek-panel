@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 
 const {Header, Content, Footer, Sider} = Layout;
 
-const AppLayout = ({children}) => {
+const AppLayout = ({activePage, children}) => {
     const [collapsed, setCollapsed] = useState(false);
     const [current, setCurrent] = useState('1');
 
@@ -39,7 +39,7 @@ const AppLayout = ({children}) => {
         >
             <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
                 <div className="logo"/>
-                <Menu theme="dark" defaultSelectedKeys={['1']} selectedKeys={[current]}
+                <Menu theme="dark" defaultSelectedKeys={['1']} selectedKeys={activePage}
                       mode="inline" items={items}
                       onClick={({item, key, keyPath, domEvent}) => {
 
@@ -51,8 +51,14 @@ const AppLayout = ({children}) => {
                     className="site-layout-background"
                     style={{
                         padding: 0,
+                        color: '#fff',
+                        fontSize: '1.5em',
+                        paddingLeft: '1em',
                     }}
-                />
+                >
+                    AvDestek Panel
+                </Header>
+
                 <Content
                     style={{
                         margin: '0 16px',

@@ -4,7 +4,7 @@ import RegisterList from "../components/RegisterList/RegisterList";
 
 const RegisterConfirmPage = props => {
     return (
-        <AppLayout>
+        <AppLayout activePage={['2']}>
             <RegisterList/>
         </AppLayout>
     );

@@ -5,7 +5,7 @@ import Banned from "../components/Banned";
 
 const EngelliHesaplarPage = props => {
     return (
-        <AppLayout>
+        <AppLayout activePage={['3']}>
             <Banned/>
         </AppLayout>
     );
