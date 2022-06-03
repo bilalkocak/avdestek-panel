@@ -48,12 +48,12 @@ const Banned = props => {
                         actions={[
                             <a key="list-loadmore-edit"
                                href={'https://www.barobirlik.org.tr/AvukatArama'}
-                               target={'_blank'}>
+                               target={'_blank'} rel="noreferrer">
                                 <Button shape="circle" type="primary">
                                     <SearchOutlined/>
                                 </Button>
                             </a>,
-                            <Button shape="circle" type="primary" onClick={
+                            <Button shape="circle" type="primary" key={'ban'} onClick={
                                 () => {
                                     unbanUser(item._id).then(() => {
                                         success('Kullanıcı engellendi.');

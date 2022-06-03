@@ -79,7 +79,7 @@ const RegisterList = props => {
                         actions={[
                             <a key="list-loadmore-edit"
                                href={'https://www.barobirlik.org.tr/AvukatArama'}
-                               target={'_blank'}>
+                               target={'_blank'} rel="noreferrer">
                                 <Button shape="circle" type="primary">
                                     <SearchOutlined/>
                                 </Button>
@@ -124,15 +124,15 @@ const RegisterList = props => {
                         actions={[
                             <a key="list-loadmore-edit"
                                href={'https://www.barobirlik.org.tr/AvukatArama'}
-                               target={'_blank'}>
+                               target={'_blank'} rel="noreferrer">
                                 <Button shape="circle" type="primary">
                                     <SearchOutlined/>
                                 </Button>
                             </a>,
-                            <Button shape="circle" type="primary" onClick={() => confirm(item._id)}>
+                            <Button key={"2"} shape="circle" type="primary" onClick={() => confirm(item._id)}>
                                 <CheckOutlined/>
                             </Button>,
-                            <Button danger shape="circle" type="primary" onClick={() => banUser(item._id)}>
+                            <Button key={"3"} danger shape="circle" type="primary" onClick={() => banUser(item._id)}>
                                 <StopOutlined/>
                             </Button>
                         ]}
